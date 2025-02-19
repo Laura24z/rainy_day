@@ -11,8 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal">
+
         <edu.up.patla.rainy_day.viewing_time
-            android:id="@+id/surfaceView"
+            android:id="@+id/rainView"
             android:layout_width="800dp"
             android:layout_height="800dp"
             tools:layout_editor_absoluteX="0dp"
@@ -27,6 +28,7 @@
                 android:id="@+id/sideways_seek"
                 android:layout_width="225dp"
                 android:layout_height="50dp"
+                android:max="799"
                 tools:layout_editor_absoluteX="920dp"
                 tools:layout_editor_absoluteY="125dp" />
 
@@ -61,6 +63,7 @@
                 android:id="@+id/upright_seek"
                 android:layout_width="225dp"
                 android:layout_height="50dp"
+                android:max="800"
                 tools:layout_editor_absoluteX="920dp"
                 tools:layout_editor_absoluteY="325dp" />
 
@@ -69,10 +72,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
                 <TextView
-                    android:id="@+id/text_down"
+                    android:id="@+id/text_up"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="   Down"
+                    android:text="   Up"
                     tools:layout_editor_absoluteX="900dp"
                     tools:layout_editor_absoluteY="390dp" />
 
@@ -81,10 +84,10 @@
                     android:layout_height="match_parent" /><!--puts space between the up and down text-->
 
                 <TextView
-                    android:id="@+id/text_up"
+                    android:id="@+id/text_down"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Up"
+                    android:text="Down"
                     tools:layout_editor_absoluteX="1100dp"
                     tools:layout_editor_absoluteY="390dp" />
 
